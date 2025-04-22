@@ -1,0 +1,19 @@
+Using linux
+// to GET all books
+curl http://localhost:3000/api/books
+
+// to POST a new book
+curl -X POST http://localhost:3000/api/books \
+-H "Content-Type: application/json" \
+-d '{"title":"LEUK LE LIEVRE","author":"Leopold Sedar Senghor","isbn":"9780441172719","publication_year":1980,"genre":"child-story"}'
+
+// to GET one specific book
+curl http://localhost:3000/api/books/1
+
+//to PUT a book info
+curl -X PUT http://localhost:3000/api/books/1 \
+-H "Content-Type: application/json" \
+-d '{"title":"LEUK LE PETIT LIEVRE","author":"Leopold Sedar Senghor","isbn":"9780441172719","publication_year":1980,"genre":"child-story"}'
+
+//DELETE the book
+curl -X DELETE http://localhost:3000/api/books/1

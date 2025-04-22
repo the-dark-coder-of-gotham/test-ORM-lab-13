@@ -1,7 +1,7 @@
 {
   "development": {
-    "username": "webdev_user",
-    "password": "Web_dev2",
+    "username": "",
+    "password": "",
     "database": "book_management",
     "host": "127.0.0.1",
     "dialect": "mysql"
